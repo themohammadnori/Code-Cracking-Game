@@ -1,0 +1,50 @@
+body{
+
+    background-color: rgb(247, 247, 247);
+    display: block;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buttonxd {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .buttonxd:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .inp {
+      border-color: rgb(133, 133, 133);
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      padding: 8px 8px;
+      margin: 20px;
+  }
+
+  .inp:hover {
+    border: 1px solid rgb(87, 178, 214);
+  }
+
+  footer a{
+      
+      text-decoration: none;
+      color: black;
+      font-family: fantasy;
+  }

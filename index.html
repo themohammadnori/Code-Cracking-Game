@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cracking Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="index.js"></script>
+   <center><header><h1>Cracking Code Game </h1></header> </center>  
+    <style>
+    td{ border: 2px solid black;}
+    
+    </style>
+    
+
+</head>
+
+
+<body> 
+  <center>
+  Code:
+  <input type="text" id="code1" class="inp" />
+  <input type="text" id="code2" class="inp" />
+  <input type="text" id="code3" class="inp" />
+  <br />
+  <br />
+  <input type="button" onClick="crack()" class="button buttonxd" value="Try Code" />
+  <br />
+  <br />
+  
+   
+    
+     <b><div id="output"></div><br></b>
+    <br />
+   
+    <br />
+    <br />
+   
+    <br />
+    <br />
+    
+    
+
+     <script type="text/javascript">
+    
+    var out = document.getElementById('output');
+
+    var cCode = [];
+    var count = 0;
+    var c1 = document.getElementById("code1");
+    var c2 = document.getElementById("code2");
+    var c3 = document.getElementById("code3");
+
+    for(var x =0; x<3; x++) {
+      cCode.push(Math.floor(Math.random()* 9));
+    }
+    
+    //out.innerHTML += cCode + "<br />";
+        
+        function crack() {
+          
+          count = 0;
+          var guess = [c1.value,c2.value,c3.value];
+           for(var x =0; x< cCode.length; x++){
+             out.innerHTML += checkNum(guess[x],cCode[x]);
+           }
+           if(count == 3){
+             out.innerHTML += "<br /> You Guessed it <br />";
+
+           }else {
+             out.innerHTML += "<br />";
+           }
+        }
+
+
+        function checkNum(a,b) {
+          if(a > b){ return "L"}
+          if(a < b) { return "H"}
+          if(a==b){
+            count++;
+            return a;
+
+          }
+        }
+        </script>
+        
+        </center>
+        </body> 
+        <center><footer class="foo">Created By ❤️ and <a href="https://www.google.com/search?q=themohammadnori&rlz=1C5CHFA_enIR822IR822&oq=themohammadnori&aqs=chrome..69i57j35i39j69i60l3.6039j0j7&sourceid=chrome&ie=UTF-8" >@themohammadnori</a> </footer></center>  
+        </html>
